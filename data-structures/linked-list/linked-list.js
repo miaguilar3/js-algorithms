@@ -103,7 +103,7 @@ class LinkedList{
   }
 
   /**
-   * 
+   * @param {*} value
    */
   find(value){
     var node = this.head;
