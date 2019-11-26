@@ -33,5 +33,3 @@ var maxLevelSum = function(root) {
 
   return maxLevel;
 };
-
-var maxLevelSum
