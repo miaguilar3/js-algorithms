@@ -20,5 +20,5 @@ So we return the level with the maximum sum which is level 2.
 
 #### Note:
 
-1. The number of nodes in the given tree is between 1 and 10^4.
+1. The number of nodes in the given tree is between `1` and `10^4`.
 2. `-10^5 <= node.val <= 10^5`
