@@ -1,3 +1,4 @@
+## 1266. Minimum Time Visiting All Points
 On a plane there are n points with integer coordinates `points[i] = [xi, yi]`. Your task is to find the minimum time in seconds to visit all points.
 
 You can move according to the next rules:
@@ -6,7 +7,7 @@ You can move according to the next rules:
 * You have to visit the points in the same order as they appear in the array.
  
 
-Example 1:
+#### Example 1:
 
 ![alt text](https://assets.leetcode.com/uploads/2019/11/14/1626_example_1.PNG)
 
@@ -20,13 +21,13 @@ Time from [3,4] to [-1,0] = 4 seconds
 Total time = 7 seconds
 ```
 
-Example 2:
+#### Example 2:
 ```
 Input: points = [[3,2],[-2,2]]
 Output: 5
 ```
  
-Constraints:
+#### Constraints:
 ```
 points.length == n
 1 <= n <= 100
