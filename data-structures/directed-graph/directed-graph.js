@@ -17,6 +17,10 @@ class DirectedGraph{
     return this.vertices.get(v);
   }
 
+  verticesArray(){
+    return Array.from(this.vertices.values());
+  }
+
   addEdge(v1, v2, weight){
     const startVertex = this.vertices.get(v1);
     const endVertex = this.vertices.get(v2);
