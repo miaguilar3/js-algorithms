@@ -1,4 +1,5 @@
 /**
+ *  O(n^2) time and space
  *  A set is created to store index pairs of palindromic substrings.
  *  It is initialized with all index pairs [i,j] where i == j
  *   since all strings of length 1 are palindromic.
