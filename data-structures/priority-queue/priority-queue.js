@@ -44,7 +44,7 @@ class PriorityQueue{
     return popped;
   }
 
-  replaceMin(val){
+  replaceTop(val){
     this.heap[top] = val;
     this.bubbleDown(top);
   }
