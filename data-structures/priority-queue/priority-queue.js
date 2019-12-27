@@ -70,15 +70,18 @@ class PriorityQueue{
     this.replaceReference(ref, ref);
   }
 
-  push(vals){
-    if(!Array.isArray(vals)){
-      vals = [vals];
-    }
+  push(val){
+    this.heap.push(val);
+    this.indexMap.set(val, this.heap.length - 1);
+    this.bubbleUp(this.heap.length - 1);
+  }
 
+  pushAll(vals){
+    if(!Array.isArray(vals)){
+      throw new Error('Expected Array');
+    }
     for(let v of vals){
-      this.heap.push(v);
-      this.indexMap.set(v, this.heap.length - 1);
-      this.bubbleUp(this.heap.length - 1);
+      this.push(v);
     }
   }
 
