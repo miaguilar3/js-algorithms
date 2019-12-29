@@ -17,17 +17,17 @@ var addTwoNumbers = function(l1, l2){
   let n3;
   let carry = 0;
   while(n1 || n2 || carry){
-      let sum = carry;
-      if(n1){ sum += n1.val; }
-      if(n2){ sum += n2.val; }
-      if(!l3){ l3 = (n3 = new TreeNode(sum % 10)); }
-      else{ 
-          n3.next = new TreeNode(sum % 10);
-          n3 = n3.next;
-      }
-      n1 = n1 ? n1.next : n1;
-      n2 = n2 ? n2.next : n2;
-      carry = Math.floor(sum / 10);
+    let sum = carry;
+    if(n1){ sum += n1.val; }
+    if(n2){ sum += n2.val; }
+    if(!l3){ l3 = (n3 = new TreeNode(sum % 10)); }
+    else{ 
+      n3.next = new TreeNode(sum % 10);
+      n3 = n3.next;
+    }
+    n1 = n1 ? n1.next : n1;
+    n2 = n2 ? n2.next : n2;
+    carry = Math.floor(sum / 10);
   }
   return l3;
 }

@@ -17,9 +17,9 @@ var addTwoNumbers2 = function(l1, l2, carry = 0){
   if(l2){ sum += l2.val; }
   const l3 = new ListNode(sum % 10);
   l3.next = addTwoNumbers(
-      l1 ? l1.next : null, 
-      l2 ? l2.next : null, 
-      Math.floor(sum / 10)
+    l1 ? l1.next : null,
+    l2 ? l2.next : null,
+    Math.floor(sum / 10)
   );
   return l3;
 }
