@@ -11,6 +11,7 @@
 // insert - use map check if present, push to arr, add to map
 // remove - use map get index, swap, pop, rm from map
 // get random - math.random, return val at rand index
+// all O(1)
 
 /**
  * Initialize your data structure here.
