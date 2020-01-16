@@ -8,9 +8,10 @@ var trap = function(height) {
     const h = height[i];
     const hr = height[i+1];
     if(h > hr){
-      // found local maximum
+      // found local maximum (a bounding bar)
       let maxh = 0;
       let maxind;
+      // find index of next bounding bar
       for(let j = i + 1; j < height.length; j++){
         const h2 = height[j];
         if(h2 >= maxh){
@@ -21,6 +22,7 @@ var trap = function(height) {
           break;
         }
       }
+      // can calculate trapped between bounding bars
       sum += calculateTrapped(height, i, maxind);
       i = maxind - 1;
     }
