@@ -17,18 +17,18 @@ var mergeKLists = function(lists) {
     }
   }
 
-  let merged = null;
-  let curr = null;
+  let mergedHead = null;
+  let mergedTail = null;
   while(minHeap.size()){
     const min = minHeap.pop();
     if(min && min.next){
       minHeap.add(min.next);
     }
-    if(!merged){ merged = min; curr = min;}
-    else{curr.next = min; curr = min;}
+    if(!mergedHead){ mergedHead = mergedTail = min; }
+    else{ mergedTail = mergedTail.next = min; }
   }
 
-  return merged;
+  return mergedHead;
 };
 
 const top = 0;
